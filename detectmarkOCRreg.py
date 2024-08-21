@@ -1,4 +1,5 @@
 #https://pyimagesearch.com/2020/12/21/detecting-aruco-markers-with-opencv-and-python/
+#python detectmarkOCRreg.py --f BT53-209-Binder1 --seed 2091 --archive BT53-209 --type DICT_5X5_50
 #import the necessary packages
 #check for id to be the first top left and top right
 #save image color format and add to csv the image file.
@@ -451,7 +452,7 @@ for images in os.listdir(folder_dir):
         #imagetodisplay = folder_dir+"/"+"IMG_20240724_135949~2.jpg"#images
         #display_image(imagetodisplay)
         image = cv2.imread(folder_dir+"/"+images)
-        image = imutils.resize(image, width=800)
+        image = imutils.resize(image, width=1200)
 
         #image = cv2.rotate(image, cv2.ROTATE_90_COUNTERCLOCKWISE)
 
